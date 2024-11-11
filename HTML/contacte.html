@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>KUREN</title>
+    <link rel="stylesheet" href="../CSS/contacte.css">
+    <link rel="icon" href="../Imatges_Videos/logo_restaurante.png" type="image/x-icon"/>
+
+    <script>
+        window.onload = function() {
+            document.querySelector('.logo').addEventListener('click', function() {
+                location.reload();
+            });
+        };
+    </script>
+</head>
+
+<body>
+    
+    <header class="header">
+        <img class="logo" src="../Imatges_Videos/logo_restaurante.png" alt="Logotip del Restaurant"/>
+        <h1 class="titulo">KUREN</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a class="nav-animation" href="../index.html">Inici</a></li>
+                <li><a class="nav-animation" href="contacte.html">Contacte</a></li>
+                <li><a class="nav-animation" href="reserves.html">Reserves</a></li>
+                <li><a class="nav-animation" href="carta.html">Carta</a></li>
+                <li><a class="nav-animation" href="galeria.html">Galeria</a></li>
+                <li><a class="nav-animation" href="ressenyes.html">Ressenyes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container-form">
+      <div class="info-form">
+        <h2>Contacta amb nosaltres</h2>
+        <p>Estem emocionats de saber de tu. Si us plau, deixa'ns les teves dades i qualsevol pregunta o comentari que tinguis. 
+            <br>El nostre equip estarà encantat d'atendre't i fer que la teva experiència sigui inoblidable. Gràcies per triar-nos!</p>
+        <a href="#"> <i class="fa fa-phone">
+        </i>123-456-789</a> 
+        
+        <a href="#"> <i class="fa fa-envelope">
+        </i>kuren@restaurant.com</a>
+        
+        <a href="#"> <i class="fa fa-map-marked">
+        </i> Shibuya, Tokyo, Japó</a>
+      </div>
+
+      <main>
+        <form action="#" autocomplete="off">
+            <label class="label-nom" for="name">Ingresa el teu nom:</label>
+            <input type="text" id="name" name="nombre" placeholder="Escriu aquí" class="campo">
+            
+            <label class="label-email" for="email">Ingresa el teu correu:</label>
+            <input type="email" id="email" name="email" placeholder="Escriu aquí" class="campo">
+            
+            <label class="label-mensaje" for="mensaje">Ingresa el teu missatge:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escriu aquí"></textarea>
+    
+            <label class="container">
+                <input checked="checked" type="checkbox">
+                <span class="checkmark"></span>
+                He llegit i accepto les condicions de política de privacitat.
+            </label>
+            
+            <input type="submit" id="enviar" name="enviar" value="Enviar missatge" class="btn-enviar">
+          </form>
+      </main>      
+    </div>
+
+    <div class="publicitat1">
+        <video class="video-publicitat" src="../Imatges_Videos/publicidad_contacto1.mp4" autoplay loop muted>Video publicitat</video>
+    </div>
+    
+
+    <footer>
+        <p class="text-footer">&copy; 2024 シャイラ・マルティネス</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,1105 @@
+@import url(https://db.onlinewebfonts.com/c/cb016801ac894736ed4b03c945631927?family=HIRO+MISAKE);
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.simple-linear {
+    background: linear-gradient(#101010, rgb(71, 18, 18));
+    margin: 0;
+  }
+
+header {
+    background-color: #101010;
+    padding: 20px;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)),
+        url(../Imatges_Videos/imagen_portada_definitiva_2.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 45vh;
+        
+        display: grid; 
+        grid-template-columns: 0.5fr 1fr 2fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "logo titol nav"; 
+    }
+
+/*Navbar general*/
+nav {
+    grid-area: nav;
+    background-color: transparent;
+    background-size: cover;
+    color: #fff;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    width: 100vh;
+    padding: 20px;
+    margin-bottom: 50px;
+    
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: end;
+    align-self: end;
+}
+
+nav li {
+    display: inline;
+    margin-right: 28px;
+}
+
+nav li {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "Platypi";
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "Platypi";
+    text-decoration: none;
+}
+
+/*Classes header*/
+.logo {
+    height: 170px;
+    margin-bottom: 25px;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    align-self: end;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.titulo {
+    font-family: "HIRO MISAKE";
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+
+.navbar {
+    padding: 0;
+    list-style-type: none;
+    margin-right: 28px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    display: flex;
+    align-self: end;
+}
+
+/*Animació navbar*/
+
+.nav-animation {
+    background-image: linear-gradient(#f13b3b, #f13b3b);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size .4s;
+}
+
+a:hover, a:focus {
+    background-size: 100% 3px;
+}
+
+/*Sector del text principal*/
+section {
+    padding: 50px;
+    padding-top: 75px;
+}
+
+ul, li {
+    color: #fff;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 85px;
+    color: #f13b3b;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+h2 {
+    font-family: "HIRO MISAKE";
+    color: #f13b3b;
+    text-align: center;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: "Platypi";
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+p {
+    font-family: "Platypi";
+    color: #fff;
+    font-size: 17px;
+}
+
+.titol-carta {
+    padding-top: 25px;
+}
+
+.text-carta {
+    font-family: "Platypi";
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.titol-plats {
+    font-family: "HIRO MISAKE";
+    color: #f13b3b;
+    text-align: center;
+    font-size: 35px;
+}
+
+.entrants-plats, .primers-plats, .segons-plats, .postres-plats, .degustacio-entrants-plats, 
+.degustacio-primers-plats, .degustacio-segons-plats, .degustacio-postres-plats, .carta-vins {
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Estrelles*/
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+  
+  
+  .rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }    
+
+/*Menu diari plats entrants (targetes)*/
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-diari, .menu-degustatiu, .menu-carta-vins {
+    margin: 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tarjeta-rest1-0 {
+    background: url(../Imatges_Videos/agedashi_tofu.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest2-0 {
+    background: url(../Imatges_Videos/gyozas.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest3-0 {
+    background: url(../Imatges_Videos/sunomono.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest4-0 {
+    background: url(../Imatges_Videos/nasu_dengaku.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest5-0 {
+    background: url(../Imatges_Videos/endamame.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest6-0 {
+    background: url(../Imatges_Videos/tsukemono.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest7-0 {
+    background: url(../Imatges_Videos/karaage.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest8-0 {
+    background: url(../Imatges_Videos/kinpira_gobo.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+/*Menu diari plats primers (targetes)*/
+
+.tarjeta-rest1-1 {
+    background: url(../Imatges_Videos/destacado_ramen.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest2-1 {
+    background: url(../Imatges_Videos/destacado_sushi.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest3-1 {
+    background: url(../Imatges_Videos/destacado_sashimi_salmon.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest4-1 {
+    background: url(../Imatges_Videos/destacado_tempura_gambas.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest5-1 {
+    background: url(../Imatges_Videos/tamagoyaki.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest6-1 {
+    background: url(../Imatges_Videos/yakitori.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest7-1 {
+    background: url(../Imatges_Videos/oden.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest8-1 {
+    background: url(../Imatges_Videos/sopa_miso.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+/*Menu diari plats segons (targetes)*/
+
+.tarjeta-rest1-2 {
+    background: url(../Imatges_Videos/tonkatsu.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest2-2 {
+    background: url(../Imatges_Videos/gyudon.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest3-2 {
+    background: url(../Imatges_Videos/sukiyaki.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest4-2 {
+    background: url(../Imatges_Videos/yakizakana.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest5-2 {
+    background: url(../Imatges_Videos/shabu_shabu.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest6-2 {
+    background: url(../Imatges_Videos/chicken_katsu.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest7-2 {
+    background: url(../Imatges_Videos/chawanmushi.jpeg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest8-2 {
+    background: url(../Imatges_Videos/okonomiyaki.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+/*Menu diari plats postres (targetes)*/
+
+.tarjeta-rest1-postre {
+    background: url(../Imatges_Videos/postre1.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest2-postre {
+    background: url(../Imatges_Videos/postre2.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest3-postre {
+    background: url(../Imatges_Videos/postre3.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest4-postre {
+    background: url(../Imatges_Videos/postre4.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest5-postre {
+    background: url(../Imatges_Videos/postre5.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest6-postre {
+    background: url(../Imatges_Videos/postre6.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest7-postre {
+    background: url(../Imatges_Videos/postre7.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest8-postre {
+    background: url(../Imatges_Videos/postre8.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+
+/*Degustació plats entrants (targetes)*/
+
+.tarjeta-rest1-3 {
+    background: url(../Imatges_Videos/degustacion_entrante1.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest2-3 {
+    background: url(../Imatges_Videos/degustacion_entrante2.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest3-3 {
+    background: url(../Imatges_Videos/degustacion_entrante3.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest4-3 {
+    background: url(../Imatges_Videos/degustacion_entrante4.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+/*Degustació plats primers (targetes)*/
+
+.tarjeta-rest1-4 {
+    background: url(../Imatges_Videos/degustacion_primero1.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest2-4 {
+    background: url(../Imatges_Videos/degustacion_primero2.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest3-4 {
+    background: url(../Imatges_Videos/degustacion_primero3.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest4-4 {
+    background: url(../Imatges_Videos/degustacion_primero4.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+/*Degustació plats segons (targetes)*/
+
+.tarjeta-rest1-5 {
+    background: url(../Imatges_Videos/degustacion_segundo1.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest2-5 {
+    background: url(../Imatges_Videos/degustacion_segundo2.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest3-5 {
+    background: url(../Imatges_Videos/degustacion_segundo3.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest4-5 {
+    background: url(../Imatges_Videos/degustacion_segundo4.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+/*Degustació plats postres (targetes)*/
+
+.tarjeta-rest1-6 {
+    background: url(../Imatges_Videos/degustacion_postre1.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest2-6 {
+    background: url(../Imatges_Videos/degustacion_postre2.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest3-6 {
+    background: url(../Imatges_Videos/degustacion_postre3.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest4-6 {
+    background: url(../Imatges_Videos/degustacion_postre4.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+/*Carta de vins (targetes)*/
+
+.tarjeta-rest1-7 {
+    background: url(../Imatges_Videos/vino_espumoso1.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest2-7 {
+    background: url(../Imatges_Videos/vino_espumoso2.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest3-7 {
+    background: url(../Imatges_Videos/vino_espumoso3.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest4-7 {
+    background: url(../Imatges_Videos/vino_espumoso4.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest5-7 {
+    background: url(../Imatges_Videos/vino_blanco1.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest6-7 {
+    background: url(../Imatges_Videos/vino_blanco2.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest7-7 {
+    background: url(../Imatges_Videos/vino_blanco3.jpeg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest8-7 {
+    background: url(../Imatges_Videos/vino_blanco4.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest9-7 {
+    background: url(../Imatges_Videos/vino_rosado1.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest10-7 {
+    background: url(../Imatges_Videos/vino_rosado2.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest11-7 {
+    background: url(../Imatges_Videos/vino_rosado3.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.tarjeta-rest12-7 {
+    background: url(../Imatges_Videos/vino_rosado4.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+/*Video vi*/
+
+.video_vino {
+    margin: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.vino {
+    width: 50%;
+    height: 50%;
+}
+
+/*Targetes generals*/
+
+.column-4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.wrap-text_tarjeta-rest {
+    color: #fff;
+    padding: .5rem;
+    border-radius: 6px;
+    background: linear-gradient(to top,
+    rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+}
+
+.wrap-text_tarjeta-rest p {
+    color: #fff;
+}
+
+.cta-wrap_tarjeta-rest {
+    display: flex;
+    justify-content: space-between;
+}
+
+.precio_tarjeta-rest span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Platypi';
+    color: #fff;
+}
+
+.cta_tarjeta-rest {
+    background-color: #ef4848;
+    padding: .25rem 1rem;
+    border-radius: 4px;
+}
+
+.cta_tarjeta-rest a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #cc2020;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.text-footer {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/*Resolució de pantalla i responsibitat*/
+
+@media (max-width:891px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 35px;
+        align-self: center;
+    }
+
+    .header h1 {
+        margin: 0;
+        grid-column: 2;
+    }
+
+    .navbar ul li a:hover {
+        color: #ffffff;
+    }
+    
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+
+
+    nav {
+        grid-column: 3;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+}
+
+@media (max-width:1024px) {
+    .column-4 {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .menu-diari {
+        margin: 50px;
+    }
+    .carta-vins {
+        height: 280vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .column-4 {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .carta-vins {
+        height: 400vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:480px) {
+    .column-4 {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

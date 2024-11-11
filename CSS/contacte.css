@@ -1,0 +1,411 @@
+@import url(https://db.onlinewebfonts.com/c/cb016801ac894736ed4b03c945631927?family=HIRO+MISAKE);
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+}
+
+header {
+    background-color: #101010;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)),
+        url(../Imatges_Videos/imagen_portada_definitiva_2.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 45vh;
+        
+        display: grid; 
+        grid-template-columns: 0.5fr 1fr 2fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "logo titol nav"; 
+    }
+
+/*Navbar general*/
+nav {
+    grid-area: nav;
+    background-color: transparent;
+    background-size: cover;
+    color: #fff;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    width: 100vh;
+    padding: 20px;
+    margin-bottom: 50px;
+    
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: end;
+    align-self: end;
+}
+
+nav li {
+    display: inline;
+    margin-right: 28px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: "Platypi";
+}
+
+/*Classes header*/
+.logo {
+    height: 170px;
+    margin-bottom: 25px;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    align-self: end;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.titulo {
+    font-family: "HIRO MISAKE";
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+
+.navbar {
+    padding: 0;
+    list-style-type: none;
+    margin-right: 28px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+    display: flex;
+    align-self: end;
+}
+
+/*Animació navbar*/
+.nav-animation {
+    background-image: linear-gradient(#f13b3b, #f13b3b);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size .4s;
+}
+
+a:hover, a:focus {
+    background-size: 100% 3px;
+}
+
+/*Text*/
+
+h1 {
+    font-size: 85px;
+    color: #f13b3b;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'HIRO MISAKE';
+    margin-bottom: 15px;
+    color: #f13b3b;
+    font-weight: bold;
+}
+
+ul, li {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Platypi';
+}
+
+/*Footer*/
+
+footer {
+    background-color: #cc2020;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.text-footer {
+    font-size: 19px;
+}
+
+/*Formulari de contacte*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Platypi';
+}
+
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+    margin-bottom: 55px;
+    background-image: linear-gradient(
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)),
+        url(../Imatges_Videos/img_fondo_random4.jpg);
+        width: 100%;
+        padding: 30px;
+}
+
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-family: 'HIRO MISAKE';
+    color: #f13b3b;
+    text-align: center;
+}
+
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: crimson;
+    font-weight: 700;
+}
+
+.container-form a i {
+    color: #cc2020;
+    margin-right: 10px;
+}
+
+.container-form form .campo, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #cc2020;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #cc2020;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease
+}
+
+/* Amagar default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    padding-bottom: 25px;
+  }
+  
+  
+  /* Crear custom checkbox */
+  .checkmark {
+    position: relative;
+    box-shadow: rgb(255, 84, 0) 0px 0px 0px 2px;
+    background-color: rgba(16, 16, 16, 0.5);
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    margin-top: -1px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    transform-origin: 0px 10px;
+    border-radius: 4px;
+    margin: -1px 10px 0px 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .container input:checked ~ .checkmark {
+    box-shadow: rgb(255, 84, 0) 0px 0px 0px 2px;
+    background-color: rgba(245, 24, 24, 0.5);
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    margin-top: -1px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    transform-origin: 0px 10px;
+    border-radius: 4px;
+    margin: -1px 10px 0px 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style de checkmark/indicator */
+  .container .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+    transition: all 500ms ease-in-out;
+  }
+
+.container-form .btn-enviar:hover {
+    background: #ef3333;
+}
+
+/*Labels formulari*/
+
+.label-nom {
+    color: #fff;
+}
+
+.label-email {
+    color: #fff;
+}
+
+.label-mensaje {
+    color: #fff;
+}
+
+/*Publicitat*/
+
+.publicitat1 {
+    text-align: center;
+}
+
+.video-publicitat {
+    height: 200px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #cc2020;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.text-footer {
+    font-size: 19px;
+    margin: 19px;
+}
+
+/*Resolució de pantalla i responsibitat*/
+
+@media (max-width:891px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 35px;
+        align-self: center;
+    }
+
+    .header h1 {
+        margin: 0;
+        grid-column: 2;
+    }
+
+    .navbar ul li a:hover {
+        color: #ffffff;
+    }
+    
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .navbar a {
+        text-align: center;
+    }
+
+
+    nav {
+        grid-column: 3;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+}

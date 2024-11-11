@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>KUREN</title>
+    <link rel="stylesheet" href="../CSS/ressenyes.css">
+    <link rel="icon" href="../Imatges_Videos/logo_restaurante.png" type="image/x-icon"/>
+
+    <script>
+        window.onload = function() {
+            document.querySelector('.logo').addEventListener('click', function() {
+                location.reload();
+            });
+        };
+    </script>
+</head>
+
+<body>
+    
+    <header class="header">
+        <img class="logo" src="../Imatges_Videos/logo_restaurante.png" alt="Logotip del Restaurant"/>
+        <h1 class="titulo">KUREN</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a class="nav-animation" href="../index.html">Inici</a></li>
+                <li><a class="nav-animation" href="contacte.html">Contacte</a></li>
+                <li><a class="nav-animation" href="reserves.html">Reserves</a></li>
+                <li><a class="nav-animation" href="carta.html">Carta</a></li>
+                <li><a class="nav-animation" href="galeria.html">Galeria</a></li>
+                <li><a class="nav-animation" href="ressenyes.html">Ressenyes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+        <h3 class="titol-formulari">Ressenyes</h3>
+        <main>
+            <form action="#" method="post" class="reservation-form">
+
+                <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label class="label-correu" for="email">Correu electrònic:</label>
+                    <input type="email" id="email" name="email" placeholder="Escriu aquí" required>
+                
+                    <label class="label-menu" for="table-type">Tipus de menú:</label>
+                    <select id="table-type" required>
+                        <option value="">Sel·leccioni una opció</option>
+                        <option value="">Menú diari</option>
+                        <option value="">Menú de degustació</option>
+                    </select>
+
+                    <div class="label-puntuacio1">
+                        <label for="rating">Puntuació del menú (1-5):</label>
+                        <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    </div>
+
+                    <label for="table-type2">Beguda a valorar:</label>
+                    <select id="table-type2" required>
+                        <option value="">Sel·leccioni una opció</option>
+                        <option value="">Vins espumosos</option>
+                        <option value="">Vins blancs</option>
+                        <option value="">Vins rosats</option>
+                    </select>
+
+                    <div class="label-puntuacio2">
+                        <label for="rating1">Puntuació dels vins (1-5):</label>
+                        <input type="number" id="rating1" min="1" max="5" required>
+                    </div>
+                
+                    <label class="label-missatge" for="message">Missatge de comentari:</label>
+                    <textarea id="message" name="message" placeholder="Escriu aquí" rows="4" required></textarea>
+                    
+                    <input type="submit" id="enviar" name="enviar" value="Enviar ressenya" class="btn-enviar">
+            </form>
+        </main>
+
+        <div class="publicitat">
+            <img class="img-publicitat" src="../Imatges_Videos/publicidad_reseñas1.jpg" alt="Publicitat"/>
+            <video class="video-publicitat" src="../Imatges_Videos/galeria_restaurant/video1_galeria.mp4" autoplay loop muted>Video publicitat</video>
+        </div>
+
+    <footer>
+        <p class="text-footer">&copy; 2024 シャイラ・マルティネス</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!--Fet per Shaila Martínez González de Molina / 1rC SMX-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>KUREN</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="icon" href="Imatges_Videos/logo_restaurante.png" type="image/x-icon"/>
+
+    <script>
+        window.onload = function() {
+            document.querySelector('.logo').addEventListener('click', function() {
+                location.reload();
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="Imatges_Videos/logo_restaurante.png" alt="Logotip del Restaurant"/>
+        <h1 class="titulo">KUREN</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a class="nav-animation" href="../index.html">Inici</a></li>
+                <li><a class="nav-animation" href="HTML/contacte.html">Contacte</a></li>
+                <li><a class="nav-animation" href="HTML/reserves.html">Reserves</a></li>
+                <li><a class="nav-animation" href="HTML/carta.html">Carta</a></li>
+                <li><a class="nav-animation" href="HTML/galeria.html">Galeria</a></li>
+                <li><a class="nav-animation" href="HTML/ressenyes.html">Ressenyes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section class="benvinguda">
+        <img class="img-coneix-nos" src="Imatges_Videos/entrada_restaurant.jpg" alt="Imatge entrada restaurant">
+        <h2 class="titol-coneix-nos">Coneix-nos</h2>
+        <p class="text-coneix-nos">Kuren retaurant, una aposta per la gastronomia innovadora de fusió que uneix els valors més tradicionals del Japó amb els sabors més intensos. Atreveix-te a endinsar-te en una experiència gastronòmica inigualable. Benvinguts a Kuren!</p>
+        <video class="video-qui-som" src="Imatges_Videos/video_entrada_restaurant.mp4" autoplay loop muted>Video de la entrada del restaurant.</video>
+        <h2 class="titol-qui-som">Qui som?</h2>
+        <p class="text-qui-som">Som una família apassionada per la gastronomia, compromeses a oferir-vos una experiència culinària excepcional. Ens enfoquem en la qualitat, la creativitat i el servei impecable.
+            <br> Cada plat que servim reflecteix la nostra dedicació a fusionar la tradició amb la innovació japonesa. Et convidem a gaudir d´una experiència gastronòmica completa en un ambient acollidor i ple d'encant.</p>
+    </section>
+</main>
+
+    <section class="com-arribar">
+        <h2 class="titol-com-arribar">Com arribar?</h2>
+        <p class="text-com-arribar">Shibuya Scramble Crossing
+            <br>Shibuya City, Tokyo, Japó</p>
+        <iframe class="maps-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5451.770360584276!2d139.70219858083038!3d35.661189740421776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bcaeb0cd12b%3A0x20e563a2e0aec969!2sShibuya%20Scramble%20Crossing!5e0!3m2!1ses!2ses!4v1714410159249!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p class="text-footer">&copy; 2024 シャイラ・マルティネス</p>
+    </footer>
+</body>
+</html>

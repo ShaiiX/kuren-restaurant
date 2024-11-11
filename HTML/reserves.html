@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>KUREN</title>
+    <link rel="stylesheet" href="../CSS/reserves.css">
+    <link rel="icon" href="../Imatges_Videos/logo_restaurante.png" type="image/x-icon"/>
+
+    <script>
+        window.onload = function() {
+            document.querySelector('.logo').addEventListener('click', function() {
+                location.reload();
+            });
+        };
+    </script>
+</head>
+
+<body>
+    
+    <header class="header">
+        <img class="logo" src="../Imatges_Videos/logo_restaurante.png" alt="Logotip del Restaurant"/>
+        <h1 class="titulo">KUREN</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a class="nav-animation" href="../index.html">Inici</a></li>
+                <li><a class="nav-animation" href="contacte.html">Contacte</a></li>
+                <li><a class="nav-animation" href="reserves.html">Reserves</a></li>
+                <li><a class="nav-animation" href="carta.html">Carta</a></li>
+                <li><a class="nav-animation" href="galeria.html">Galeria</a></li>
+                <li><a class="nav-animation" href="ressenyes.html">Ressenyes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="information container">
+        <div class="information-content">
+            <div class="information-1">
+                <div class="information-c1">
+                    <h3>Reserves</h3>
+                    <p>
+                        Reserveu la vostra taula al nostre restaurant japonès per 
+                        gaudir d'una experiència culinària única. Esperem donar-li la benvinguda aviat!
+                    </p>
+                </div>
+                <div class="information-a1">
+                    <img src="../Imatges_Videos/reserva_img1.jpg" alt="Imatge reserva 1">
+                </div>
+            </div>
+            <div class="information-2">
+                <div class="information-b1">
+                    <img src="../Imatges_Videos/reserva_img2.jpg" alt="Imatge reserva 2">
+                </div>
+                <div class="information-c2">
+                    <h3>Especificacions</h3>        <!--Hacer formulario-->
+                    <p>
+                        Fecha y hora de la reserva.
+                        <br>
+                        Número de personas que asistirán.
+                        <br>
+                        Preferencias dietéticas o restricciones alimentarias.
+                        <br>
+                        Elección de área de asientos (por ejemplo, barra de sushi, tatami, mesa estándar).
+                        <br>
+                        Contacto de reserva (nombre, número de teléfono o correo electrónico).
+                        <br>
+                        Posibles solicitudes especiales (celebraciones, necesidades de accesibilidad, etc.).
+                        <br>
+                        Confirmación de la reserva (si es necesario).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h3 class="titol-formulari">Reserva del restaurant</h3>
+        <div class="video-form">
+            <form action="#" method="post" class="reservation-form">
+                    <label class="label-dia" for="date">Dia:</label>
+                    <input type="date" id="date" name="date" required>
+                
+                    <label class="label-hora" for="time">Hora:</label>
+                    <input type="time" id="time" name="time" required>
+                
+                    <label class="label-taula" for="table-type">Tipus de taula:</label>
+                    <select id="table-type" name="table-type" required>
+                        <option value="">Sel·leccioni una opció</option>
+                        <option value="">Taula tradicional occidental</option>
+                        <option value="">Kotatsu</option>
+                        <option value="">Chabudai</option>
+                        <option value="">Washitsu</option>
+                        <option value="">Zataku</option>
+                    </select>
+                
+                    <label class="label-correu" for="email">Correu electrònic:</label>
+                    <input type="email" id="email" name="email" placeholder="Escriu aquí" required>
+                
+                    <label class="label-telefon" for="phone">Telèfon:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Escriu aquí" required>
+                
+                    <label class="label-missatge" for="message">Missatge de comentari:</label>
+                    <textarea id="message" name="message" placeholder="Escriu aquí" rows="4" required></textarea>
+                    
+                    <input type="submit" id="enviar" name="enviar" value="Reservar" class="btn-enviar">
+            </form>
+            <div class="video-container">
+                <video class="video1" src="../Imatges_Videos/video_reserva1.mp4" autoplay loop muted>Video reserva</video>
+                <video class="video2" src="../Imatges_Videos/video_reserva2.mp4" autoplay loop muted>Video reserva</video>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="text-footer">&copy; 2024 シャイラ・マルティネス</p>
+    </footer>
+
+</body>
+</html>

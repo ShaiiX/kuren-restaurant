@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>KUREN</title>
+    <link rel="stylesheet" href="../CSS/galeria.css">
+    <link rel="icon" href="../Imatges_Videos/logo_restaurante.png" type="image/x-icon"/>
+
+    <script>
+        window.onload = function() {
+            document.querySelector('.logo').addEventListener('click', function() {
+                location.reload();
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="../Imatges_Videos/logo_restaurante.png" alt="Logotip del Restaurant"/>
+        <h1 class="titulo">KUREN</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a class="nav-animation" href="../index.html">Inici</a></li>
+                <li><a class="nav-animation" href="contacte.html">Contacte</a></li>
+                <li><a class="nav-animation" href="reserves.html">Reserves</a></li>
+                <li><a class="nav-animation" href="carta.html">Carta</a></li>
+                <li><a class="nav-animation" href="galeria.html">Galeria</a></li>
+                <li><a class="nav-animation" href="ressenyes.html">Ressenyes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="galeria">
+            <h2>Galeria</h2>
+            <p class="subtext">Descobreix la nostra galeria d'iatges i videos sobre nosaltres!</p>
+            <div class="fila1">
+                <img src="../Imatges_Videos/galeria_restaurant/galeria1.jpg" alt="Imatge 1">
+                <img src="../Imatges_Videos/galeria_restaurant/galeria2.jpg" alt="Imatge 2">
+                <img src="../Imatges_Videos/galeria_restaurant/galeria5.jpg" alt="Imatge 3">
+                <img src="../Imatges_Videos/galeria_restaurant/galeria7.jpg" alt="Imatge 4">
+            </div>
+
+            <div class="fila2">
+                <video src="../Imatges_Videos/galeria_restaurant/video1_galeria.mp4" autoplay loop muted>Video 1 galeria</video>
+                <video src="../Imatges_Videos/galeria_restaurant/video2_galeria.mp4" autoplay loop muted>Video 2 galeria</video>
+            </div>
+
+            <div class="fila3">
+                <img src="../Imatges_Videos/galeria_restaurant/galeria8.jpg" alt="Imatge 5">
+                <img src="../Imatges_Videos/galeria_restaurant/galeria10.jpg" alt="Imatge 6">
+                <img src="../Imatges_Videos/galeria_restaurant/galeria11.jpg" alt="Imatge 7">
+                <img src="../Imatges_Videos/galeria_restaurant/galeria9.jpg" alt="Imatge 8">
+            </div>
+
+            <div class="fila4">
+                <img src="../Imatges_Videos/galeria_restaurant/galeria12.jpg" alt="Imatge 9">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-footer">&copy; 2024 シャイラ・マルティネス</p>
+    </footer>
+</body>
+</html>
